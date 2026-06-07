@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIYA' BUTIK</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>WELCOME TO BIYA' COLLECTION</h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#produk">Produk</a>
+        <a href="#cart">Keranjang</a>
+        <a href="#checkout">Checkout</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Selamat Datang di Biya Butik</h2>
+    <p>
+        ✨ Biya Butik hadir sebagai pilihan terbaik untuk memenuhi
+        kebutuhan fashion muslimah dan momen spesial Anda.
+    </p>
+</section>
+
+<section id="produk">
+
+    <h2>Katalog Produk</h2>
+
+    <div class="produk-container">
+
+               <div class="produk-container">
+
+    <!-- PRODUK 1 -->
+    <div class="card">
+        <img src="segi4.jpg" alt="">
+
+        <h3>All Hijab Segi 4</h3>
+
+        <p>Rp 600.000.000 - 5.500.000</p>
+
+        <p>Stok: 15.456</p>
+
+        <button onclick="showDetail(
+        'All Hijab Segi 4',
+        'segi4.jpg',
+        'Hijab segi empat premium dengan berbagai pilihan warna.',
+        'Rp 6.000 - 550.000'
+        )">
+            Lihat Detail
+        </button>
+    </div>
+
+    <!-- PRODUK 2 -->
+    <div class="card">
+        <img src="bergo.jpg" alt="">
+
+        <h3>All Hijab Bergo Sport</h3>
+
+        <p>Rp 250.000 - 1.878.000</p>
+
+        <p>Stok: 13.164</p>
+
+        <button onclick="showDetail(
+        'All Hijab Bergo Sport',
+        'bergo.jpg',
+        'Hijab sport yang nyaman digunakan saat berolahraga.',
+        'Rp 25.000 - 178.000'
+        )">
+            Lihat Detail
+        </button>
+    </div>
+
+    <!-- PRODUK 3 -->
+    <div class="card">
+        <img src="phasmina.jpg" alt="">
+
+        <h3>All Pashmina</h3>
+
+        <p>Rp 480.000 - 4.556.000</p>
+
+        <p>Stok: 11.133</p>
+
+        <button onclick="showDetail(
+        'All Pashmina',
+        'phasmina.jpg',
+        'Pashmina premium dengan bahan lembut dan mudah dibentuk.',
+        'Rp 48.000 - 456.000'
+        )">
+            Lihat Detail
+        </button>
+    </div>
+
+    <!-- PRODUK 4 -->
+    <div class="card">
+        <img src="abaya.jpg" alt="">
+
+        <h3>All Gamis Syari</h3>
+
+        <p>Rp 2.000.000 - 4.500.000</p>
+
+        <p>Stok: 4.231</p>
+
+        <button onclick="showDetail(
+        'All Gamis Syari',
+        'abaya.jpg',
+        'Gamis syari elegan dengan bahan berkualitas dan nyaman dipakai.',
+        'Rp 200.000 - 4.500.000'
+        )">
+            Lihat Detail
+ 
+            </button>
+        </div>
+
+    <!-- PRODUK 5 -->
+    <div class="card">
+        <img src="kc.jpg" alt="">
+
+        <h3>All Khimar & Cadar</h3>
+
+        <p>Rp 1.000.000 - 8.500.000</p>
+
+        <p>Stok: 12.977</p>
+
+        <button onclick="showDetail(
+        'All Khimar & Cadar',
+        'kc.jpg',
+        'Gamis syari elegan dengan bahan berkualitas dan nyaman dipakai.',
+        'Rp 100.000 - 8.500.000'
+        )">
+            Lihat Detail
+ 
+            </button>
+        </div>
+
+
+
+
+    </div>
+
+</section>
+
+<section id="detailProduk">
+
+    <h2>Detail Produk</h2>
+
+    <img id="detailImg">
+
+    <h3 id="detailNama"></h3>
+
+    <p id="detailHarga"></p>
+
+    <p id="detailDeskripsi"></p>
+
+    <button onclick="tambahKeranjang()">
+        + Keranjang
+    </button>
+
+</section>
+
+<section id="cart">
+
+    <h2>Keranjang</h2>
+
+    <button onclick="kosongkanKeranjang()">
+        Kosongkan Keranjang
+    </button>
+
+    <div id="cartItems">
+        <p>Belum ada produk di keranjang.</p>
+    </div>
+
+</section>
+
+<section id="checkout">
+
+    <h2>Checkout</h2>
+
+    <form>
+
+        <input type="text" placeholder="Nama" required>
+
+        <input type="text" placeholder="Alamat" required>
+
+        <label>Pembayaran</label>
+
+        <select>
+            <option>Transfer Bank</option>
+            <option>DANA</option>
+            <option>OVO</option>
+            <option>GoPay</option>
+        </select>
+
+        <label>Pengiriman</label>
+
+        <select>
+            <option>JNE</option>
+            <option>J&T</option>
+            <option>SiCepat</option>
+        </select>
+
+        <button type="submit">
+            Bayar Sekarang
+        </button>
+
+    </form>
+
+</section>
+
+<section id="about">
+    <h2>Tentang Biya`</h2>
+
+    <p>
+        Biya Butik adalah toko fashion muslim yang menyediakan
+        hijab segi 4 ,bergo, pashmina,khimar,cadar &  gamis syar`i yang berkualitas.</p>
+
+    <p>    Butik ini didirikan pada tahun 2032 dimana "MESI LISTYANI" selaku founder
+        sekaligus owner dari toko dan juga brand ini berumur 24 th, beliau terinspirasi
+        dari ide yang muncul ketika beliau mendapatkan tugas untuk membuat web toko 
+        pada saat beliau masih duduk dibangku kelas 11,namun atas dasar tekad yang kuat
+serta usaha dan doa yang sungguh,Beliau benar-benar mewujudkan impiannya dulu yang mungkin terdengar mustahil ,Beliau berhasil 
+mematahkan pendapat orang-orang yang meremehkannya,siapa sangka Beliau kini memiliki usaha sebesar dan sebanyak sekarang,maka dari itu 
+"janganlah kamu mengukur kesuksesan seseorang ketika seseorang tersebut masih berproses" Itulah sepatah kata yang selalu Beliau ucapkan kepada semua orang(kami selaku kariawan) agar mereka terus bersemangat .
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Kontak</h2>
+
+    <p>Whatsapp : 0812-3456-7891 (Mba Rahayu)</p>
+
+     <p>Email : biyabutik@gmail.com</p>
+
+     <p>Instagram : @biyabutik</p>
+
+    <p>Tiktok : @BIYA`BOUTIQUE/p>
+
+</section>
+
+<footer>
+    © 2026 Biya Butik
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
