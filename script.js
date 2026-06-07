@@ -7,10 +7,10 @@ function showDetail(nama, gambar, deskripsi, harga) {
 
     document.getElementById("detailProduk").style.display = "block";
 
-    document.getElementById("detailNama").innerText = nama;
+    document.getElementById("detailNama").innerHTML = nama;
     document.getElementById("detailImg").src = gambar;
-    document.getElementById("detailHarga").innerText = harga;
-    document.getElementById("detailDeskripsi").innerText = deskripsi;
+    document.getElementById("detailHarga").innerHTML = harga;
+    document.getElementById("detailDeskripsi").innerHTML = deskripsi;
 
     produkAktif = {
         nama: nama,
